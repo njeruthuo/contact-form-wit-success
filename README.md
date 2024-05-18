@@ -1,37 +1,55 @@
-# Front-end Style Guide
+# Frontend Mentor - Contact form solution
 
-## Layout
+This is a solution to the [Contact form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-The designs were created to the following widths:
+## Table of contents
 
-- Mobile: 375px
-- Desktop: 1440px
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+  - [Built with](#built-with)
+- [Author](#author)
 
-> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+## Overview
 
-## Colors
+### The challenge
 
-### Primary
+Users should be able to:
 
-- Light Green: hsl(148, 38%, 91%)
-- Green: hsl(169, 82%, 27%)
-- Red: hsl(0, 66%, 56%)
+- Complete the form and see a success toast message upon successful submission
+- Receive form validation messages if:
+  - A required field has been missed
+  - The email address is not formatted correctly
+- Complete the form only using their keyboard
+- Have inputs, error messages, and the success message announced on their screen reader
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-### Neutral
+### Screenshot
 
-- White: hsl(0, 0%, 100%)
-- Medium Grey: hsl(186, 15%, 59%)
-- Dark Grey: hsl(187, 24%, 22%)
+![](./screenshot/s1.png)
+![](./screenshot/s2.png)
+![](./screenshot/s3.png)
+![](./screenshot/s4.png)
 
-## Typography
+### Links
 
-### Body Copy
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-- Font size (labels): 16px
+### Built with
 
-### Font
+- Flexbox
+- formData
+- CSS Grid
+- TailwindCSS
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Styled Components](https://styled-components.com/) - For styles
 
-- Family: [Karla](https://fonts.google.com/specimen/Karla)
-- Weights: 400, 700
+## Author
 
-> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
+- Website - [Julius Njeru](https://frontend-portfolio-amber.vercel.app/)
+- Frontend Mentor - [@njeruthuo](https://www.frontendmentor.io/profile/njeruthuo)
+- Twitter - [@njeru19_njeru](https://www.twitter.com/njeru19_njeru)
