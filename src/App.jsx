@@ -4,17 +4,38 @@ import successIcon from "./img/success.svg";
 const App = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
-  console.log(setSuccess, setError);
-  false;
+
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    const data = new FormData(event.currentTarget);
+
+    let fname = data.get("fname");
+    let lname = data.get("lname");
+    let email = data.get("email");
+    let radio = data.get("enquiry");
+    let message = data.get("message");
+    let consent = data.get("consent");
+
+    if (fname && lname && email && radio && message && consent) {
+      setError(false);
+      setSuccess(true);
+      setTimeout(() => {
+        setSuccess(false);
+      }, 3000);
+    } else {
+      setError(true);
+      setSuccess(false);
+    }
   };
 
   const borderStyles = `border border-${
     error ? "red" : "mediumGrey"
   } rounded-md p-2`;
 
-  const borderStylesRadio = `border ${error? "border-red":"border-mediumGrey"} rounded-md p-2 sm:w-1/2 borderStyles rounded-md p-2 mb-1 sm:mb-0`;
+  const borderStylesRadio = `border ${
+    error ? "border-red" : "border-mediumGrey"
+  } rounded-md p-2 sm:w-1/2 borderStyles rounded-md p-2 mb-1 sm:mb-0`;
 
   return (
     <>
@@ -33,6 +54,10 @@ const App = () => {
                   type="text"
                   name="fname"
                   id="fname"
+                  // value={name.fname}
+                  // onChange={(e) =>
+                  //   setName({ ...name, [e.target.name]: e.target.value })
+                  // }
                 />
 
                 {error && (
@@ -50,6 +75,10 @@ const App = () => {
                   type="text"
                   name="lname"
                   id="lname"
+                  // value={name.lname}
+                  // onChange={(e) =>
+                  //   setName({ ...name, [e.target.name]: e.target.value })
+                  // }
                 />
 
                 {error && (
@@ -69,6 +98,8 @@ const App = () => {
                 type="email"
                 name="email"
                 id="email"
+                // value={email}
+                // onChange={(e) => setEmail(e.target.value)}
               />
 
               {error && (
@@ -84,17 +115,29 @@ const App = () => {
               </label>
               <div className="sm:space-x-3 flex sm:flex-row flex-col">
                 <div className={borderStylesRadio}>
-                  <input type="radio" name="enquiry" id="query" />
-                  <label className="text-mediumGrey ml-2" htmlFor="">
+                  <input
+                    type="radio"
+                    name="enquiry"
+                    id="query"
+                    value="General enquiry"
+                  />{" "}
+                  General enquiry
+                  {/* <label className="text-mediumGrey ml-2" htmlFor="">
                     General enquiry
-                  </label>
+                  </label> */}
                 </div>
 
                 <div className={borderStylesRadio}>
-                  <input type="radio" name="enquiry" id="query" />
-                  <label className="text-mediumGrey ml-2" htmlFor="">
+                  <input
+                    type="radio"
+                    name="enquiry"
+                    id="query"
+                    value="Support Request"
+                  />{" "}
+                  Support Request
+                  {/* <label className="text-mediumGrey ml-2" htmlFor="">
                     Support Request
-                  </label>
+                  </label> */}
                 </div>
               </div>
               {error && (
@@ -114,6 +157,8 @@ const App = () => {
                 type="text"
                 name="message"
                 id="message"
+                // value={message}
+                // onChange={(e) => setMessage(e.target.value)}
               />
 
               {error && (
@@ -123,7 +168,13 @@ const App = () => {
 
             <>
               <div className="flex space-x-4 mt-4">
-                <input type="checkbox" name="consent" id="checkbox" />
+                <input
+                  type="checkbox"
+                  name="consent"
+                  id="checkbox"
+                  // value={consent}
+                  // onChange={(e) => setConsent(e.target.checked)}
+                />
                 <label htmlFor="checkbox" className="text-mediumGrey text-xs">
                   I consent being contacted by the team *
                 </label>

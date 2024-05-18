@@ -26,10 +26,10 @@ label {
   @apply text-sm my-1;
 }
 
-input:hover{
-  @apply border-green cursor-pointer
+input:hover {
+  @apply border-green cursor-pointer;
 }
 
-input::spelling-error{
-  @apply border-x-red cursor-pointer
+input::spelling-error {
+  @apply border-x-red cursor-pointer;
 }
