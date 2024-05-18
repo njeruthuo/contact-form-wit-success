@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/njeruthuo/contact-form-wit-success)
-- Live Site URL: [Add live site URL here](https://contact-form-six-vert.vercel.app/)
+- Solution URL: [https://github.com/njeruthuo/contact-form-wit-success](https://github.com/njeruthuo/contact-form-wit-success)
+- Live Site URL: [https://contact-form-six-vert.vercel.app/](https://contact-form-six-vert.vercel.app/)
 
 ### Built with
 
