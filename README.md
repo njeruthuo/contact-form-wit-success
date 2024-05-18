@@ -28,15 +28,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot/s1.png)
-![](./screenshot/s2.png)
-![](./screenshot/s3.png)
-![](./screenshot/s4.png)
+![](./screenshots/s1.png)
+![](./screenshots/s2.png)
+![](./screenshots/s3.png)
+![](./screenshots/s4.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/njeruthuo/contact-form-wit-success)
+- Live Site URL: [Add live site URL here](https://contact-form-six-vert.vercel.app/)
 
 ### Built with
 
